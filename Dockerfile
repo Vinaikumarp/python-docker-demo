@@ -17,5 +17,5 @@ COPY --chown=appuser:appgroup static/ static/
 USER appuser
 
 EXPOSE 8000
-LABEL This is a Python Dockerfile to create a food_truck application using python language.
+LABEL This is a Python Dockerfile to create a food_truck Application using python language.
 CMD ["python", "app.py"]
