@@ -2,7 +2,7 @@ FROM python:3.12-alpine
 
 WORKDIR /myapp
 
-ENV 8000
+EXPOSE 8000
 
 # Copy the dependency file first to improve Docker layer caching.
 COPY requirements.txt .
