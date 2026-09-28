@@ -1,7 +1,5 @@
 FROM python:3.12-alpine
-
 WORKDIR /myapp
-
 EXPOSE 8000
 
 # Copy the dependency file first to improve Docker layer caching.
@@ -19,5 +17,5 @@ COPY --chown=appuser:appgroup static/ static/
 USER appuser
 
 EXPOSE 8000
-
+LABEL This is a Python Dockerfile to create a food_truck application using python language.
 CMD ["python", "app.py"]
